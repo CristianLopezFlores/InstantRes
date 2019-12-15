@@ -1,32 +1,227 @@
 body{
     margin: 0;
-    background-color:#60C7FF;
+    background-color:#1EC08C;
 }
-#header, .mainMenu,#menuOptions{
+#header,#intro,#menuOptions,#header,#info,.infoSec{
     position: relative;
+    display: block;
+}
+
+#intro,#menuOptions,#info{
+    padding-top:0px;
+}
+#container{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height:100vh;
+    background-image: url("officePhone.jpg");
+}
+#gradient{
+    position: absolute;
+    width:100%; 
+    height:500px;
+    bottom: 0px;
+    background: linear-gradient(
+    to top,
+    #1EC08C,
+    rgba(255, 0, 0, 0)
+    )
 }
 #header{
-    
-    width:100%;
-    height:90px;
+    width: 100%;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+}
+#login{
+    position: absolute;
+    bottom: 0px;
+    color:#1EC08C;
+    border:3px;
+    border-color:#1EC08C;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: none;
+    font-size:15px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    display: block;
+}
+#title{
+    margin: 0;
+    font-size:50px;
+    color:#1EC08C;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    display: block;
+}
+#intro{
+    
+    margin: 0 auto; 
+    padding: 10px;
+    width:300px; 
+    height:fit-content;
+    font-size:20px;
+    font-family: Chalkduster;
+    text-align: center; 
+    color:#2290B9;
+}
+#info{
+    
+    margin: 0 auto; 
+    width:fit-content;   
+    
+}
+.infoSec{
 
+    height: 150px;
+    width:300px;
+    font-family: OCR A Std; 
+    font-size:20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0px  20px #888888;
+    
+
+    
 }
-.mainMenu{
-    margin: 0 auto;
-    width: 80%;
-    height:70%;
-    border-style:solid;
-    border-color: black;
-}
+
 #menuOptions{
-    background-color: blue;
-    width:200px;
-    height: 100px;
     width:fit-content; 
     height:fit-content;
     margin: 0 auto; 
 }
+.options{
+    display: inline;
+    border-radius:6px;
+    background-color: #27A6D5 ;
+    color:white;
+    font-size:22px;
+    
+    
+}
+#container1{
+    width: 100%;
+
+}
+#banner{
+    padding:5px;
+    background-image: url('pexels-photo-733856-2.jpeg')
+}
+#infoHeader{
+
+    position: relative;
+    width: 100%;
+    
+    margin: 0 auto;
+    font-size: 17px;
+    font-family: OCR A Std;
+    color:white ;
+    background-color:#27A6D5;
+    box-shadow: 0px 0px  20px black;
+}
+p{
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding:8px 0;
+}
+#additionalinfo{
+    color:#27A6D5;
+    font-size: 15px;
+    font-family: OCR A Std;
+    margin: 0;
+}
+#inputSectContainer{
+    margin: auto;
+    padding: 1px 1px;
+    border-radius: 20px;
+    background-color: #D6DFDC;
+    width: 320px;
+    
+}
+#inputSection{
+    width: 300px;
+    position: relative;
+    margin: 10 auto;
+    padding: 5px 0px;
+    border-style: solid;
+    border-color: #2290B9;
+    border-radius: 10px;
+
+}
+.input input[type=text]{
+    margin: 3px;
+    width: 90%;
+    font-size: 20px;
+    display: table;
+    margin: 0 auto;
+    border:1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:#707070;
+    color:#313131; 
+}
+h2{
+    display: table;
+    margin: 0 auto;
+    color: #2290B9;
+}
+h3{
+    position: relative;
+    display: inline;
+    margin: 0 0 0 20px;
+    color: #2290B9;
+}
+h5{
+    margin: 0 0;
+    display: inline;
+}
+@media only screen and (min-width: 768px){
+    #container{ 
+        background-image: url("pexels-photo-461077.jpeg");
+    }
+    #header{
+        height: 100px;
+    }
+    #title{
+        font-size:80px;
+    }
+    #login{
+        right: 30px;
+        bottom: initial;
+        font-size:45px;
+    }
+    .options{
+        font-size:30px;
+        
+    }
+    #intro,#menuOptions,#info{
+        padding-top:50px;
+    }
+    #infoHeader{
+        
+        font-size: 23px;
+    }
+    #inputSectContainer{
+        width: 600px;
+    }
+    
+}
+@media only screen and (min-width: 1000px){
+    #info{
+        display:flex;
+    }
+    #container{
+        height:100vh;  
+    }
+    #intro{
+        width:fit-content;
+        font-size:30px;
+    }
+
+
+}
+
