@@ -140,7 +140,7 @@ p{
     padding: 1px 10px;
     border-radius: 20px;
     background-color: #D6DFDC;
-    width: 320px;
+    
     box-shadow: 0px 0px  15px black;
     
 }
@@ -155,7 +155,7 @@ p{
     background-color: white;
 
 }
-input[type=text]{
+.input input[type=text]{
     margin: 3px;
     width: 90%;
     font-size: 20px;
@@ -232,34 +232,10 @@ h5{
         font-size: 23px;
     }
     #inputSectContainer{
-        width: fit-content;
+        width: 600px;
     }
-    #inputSection{
-        width:700px;
-    }
-    input[type=text]{
-       
-        width: 300px;;
-        margin:0 0 0 15px;
-    }
-    .row1{
-        display:inline-block;
-    }
-    .row2{
-        display: inline-block;;
-    }
-    #zip, #city{
-        width:140px;
-    }
-   
+    
 }
-
-
-
-
-
-
-
 @media only screen and (min-width: 1000px){
     #info{
         display:flex;

@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background: #fff;
+}
+
+strong {
+    font-weight: bold;
+}
+sup {
+    font-size: 6px;
+    position: relative;
+    top: -0.8em;
+    left: -2px;
+}
+
+/*
+  
+  Utility Classes
+  
+*/
+
+.adsize {
+  width: 728px; height: 90px;
+}
+
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.center {
+  left: 0; top: 0; right: 0; bottom: 0;
+  margin: auto;
+}
+
+.contain {
+  position:absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%; height: 100%;
+}
+
+.cover {
+  position:absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%; height: 100%;
+}
+
+/*
+  
+  Banner
+
+*/
+
+#banner{
+  display: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+  overflow:hidden;
+  display:block !important;
+  background: #dfe1df;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:1px solid #939598;
+}
+
+/*
+
+  Clickthrough
+
+*/
+
+#ctaovr{
+  opacity: 0;
+}
+
+#ctaout, #ctaovr{
+  position: absolute;
+}
+
+#clickthrough {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/*
+
+  Loader
+
+*/
+
+
+#loader {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+    z-index: 10000;
+    border: 1px solid #000;
+}
+
+#loader .circle {
+  -webkit-animation: spin 0.5s linear infinite;
+          animation: spin 0.5s linear infinite;
+  border: 5px solid #ddd;
+  border-bottom-color: #481a6f;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px; 
+  top: 50%;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -25px;
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); 
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); 
+  } 
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); 
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); 
+  } 
+}
