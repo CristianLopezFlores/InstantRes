@@ -144,7 +144,7 @@ p{
     box-shadow: 0px 0px  15px black;
     
 }
-#inputSection{
+#inputSection,#Summery-Objective{
     width: 300px;
     position: relative;
     margin: 10 auto;
@@ -154,6 +154,17 @@ p{
     border-radius: 10px;
     background-color: white;
 
+}
+
+#sumObj{
+    display: flex;
+    margin:0 auto;
+    border-radius:10px;
+    width:280px;
+    height:100px;
+    max-width:650px;
+    max-height:150px;
+    font-size:15px;
 }
 input[type=text]{
     margin: 3px;
@@ -167,6 +178,7 @@ input[type=text]{
     border-color:#707070;
     color:#313131; 
 }
+
 h2{
     display: table;
     margin: 0 auto;
@@ -234,7 +246,7 @@ h5{
     #inputSectContainer{
         width: fit-content;
     }
-    #inputSection{
+    #inputSection,#Summery-Objective{
         width:700px;
     }
     input[type=text]{
@@ -242,6 +254,7 @@ h5{
         width: 300px;;
         margin:0 0 0 15px;
     }
+    
     .row1{
         display:inline-block;
     }
@@ -251,12 +264,14 @@ h5{
     #zip, #city{
         width:140px;
     }
+    
+   #sumObj{
    
+   
+    width:650px;
+    max-width:650px;
 }
-
-
-
-
+}
 
 
 
