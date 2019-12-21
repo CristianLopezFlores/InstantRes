@@ -39,9 +39,9 @@ body{
 #login{
     position: absolute;
     bottom: 0px;
-    color:#1EC08C;
+    color:white;
     border:3px;
-    border-color:#1EC08C;
+    border-color:white;
     border-style: solid;
     border-radius: 8px;
     background-color: none;
@@ -153,7 +153,6 @@ p{
     border-color: #2290B9;
     border-radius: 10px;
     background-color: white;
-
 }
 
 #sumObj{
@@ -166,9 +165,9 @@ p{
     max-height:150px;
     font-size:15px;
 }
-input[type=text]{
+input{
     margin: 3px;
-    width: 90%;
+    width: 270px;
     font-size: 20px;
     display: table;
     margin: 0 auto;
@@ -178,7 +177,9 @@ input[type=text]{
     border-color:#707070;
     color:#313131; 
 }
-
+input[type="month"]{
+    height:27px;
+}
 h2{
     display: table;
     margin: 0 auto;
@@ -217,6 +218,41 @@ h5{
     top:2px;
     
 }
+.inputExperience{
+    border-top:4px;
+    border-bottom:4px;
+    border-right:0px;
+    border-left:0px;
+    border-style:solid;
+    border-color:rgb(14, 63, 82); 
+    border-radius:8px;
+    padding: 10px 0;
+    margin: 10px 0;
+    box-shadow: 0px 0px 6px black;
+}
+.description{
+    display:flex;
+    margin: 0px auto;
+    width: 270px;
+    height:70px;
+    max-width:270px;
+    max-height:120px;
+    padding: 0;
+    font-size: 12px;
+    border:1px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:#707070;
+    color:#313131;
+}
+.curEmployForm{
+    margin: 10px 0 0 15px;
+}
+input[type="checkbox"]{  
+    width:30px; 
+    display:inline-block;
+}
+
 @media only screen and (min-width: 768px){
     #container{ 
         background-image: url("pexels-photo-461077.jpeg");
@@ -246,12 +282,12 @@ h5{
     #inputSectContainer{
         width: fit-content;
     }
-    #inputSection,#Summery-Objective{
+    #inputSection,#Summery-Objective,#skillsSection{
         width:700px;
     }
-    input[type=text]{
+    input{
        
-        width: 300px;;
+        width: 300px;
         margin:0 0 0 15px;
     }
     
@@ -259,21 +295,35 @@ h5{
         display:inline-block;
     }
     .row2{
-        display: inline-block;;
+        display: inline-block;
+    }
+    .newContact{
+        display: inline-block;
     }
     #zip, #city{
         width:140px;
     }
     
    #sumObj{
-   
-   
-    width:650px;
-    max-width:650px;
-}
-}
+        width:650px;
+        max-width:650px;
+       
+    }
+    .description{
+        margin: 0 0 0 20px;
+        width: 296px;
+        height:25px;
+        font-size:15px;
+        max-width:500px;
+        max-height:120px;
 
+    }
+    #newContactSec div{
 
+       margin: 0 5px 0 0;
+       display: inline-block;
+    }
+}
 
 @media only screen and (min-width: 1000px){
     #info{

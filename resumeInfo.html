@@ -29,43 +29,45 @@
             <div id="inputSection">
                 <div id="Name">
                     <h2 >Name</h2>
-                        <input id="name" class="inputText" type="text" name="Name" placeholder="John Doe">
+                        <input id="name" class="inputText" type="text"  placeholder="John Doe">
                 </div>
                 <div class="input">
                         <h3>Title</h3>
                         <h5>(optional)</h5>
-                        <input id="email" class="inputText" type="text" name="Name" placeholder="Senior Software Engineer">
+                        <input id="email" class="inputText" type="text"  placeholder="Senior Software Engineer">
                 </div>
                 <h2>Contact</h2>
                 <div id="contactInfo">
                     <div class="row">
                         <div class="row1">
                                 <h3>Email</h3>
-                                <input id="email" class="inputText" type="text" name="Name" placeholder="johndoe1983@gmail.com">
+                                <input id="email" class="inputText" type="text"  placeholder="johndoe1983@gmail.com">
                         </div>
                         
                         <div class="row1">
                                 <h3>Number</h3>
-                                <input id="number" class="inputText" type="text" name="Name" placeholder="555-555-5555">
+                                <input id="number" class="inputText" type="text"  placeholder="555-555-5555">
                         </div>
                     </div>
                     <div class="row">
                         <div class="row2">
                                 <h3>Address</h3>
                                 <h5>(optional)</h5>
-                                <input id="address" class="inputText" type="text" name="Name" placeholder="1234 W fakestreet ave">
+                                <input id="address" class="inputText" type="text"  placeholder="1234 W fakestreet ave">
                         </div>
                         <div class="row2">
                                 <h3>Zip</h3>
                                 <h5>(optional)</h5>
-                                <input id="zip" class="inputText" type="text" name="Name" placeholder="93123">
+                                <input id="zip" class="inputText" type="text"  placeholder="93123">
                         </div>
                         <div class="row2">
                                 <h3>Location</h3>
-                                <input id="city" class="inputText" type="text" name="Name" placeholder="San Francisco, Ca">
+                                <input id="city" class="inputText" type="text"  placeholder="San Francisco, Ca">
                         </div>
                     </div>
-                    
+                    <div id="newContactSec">
+            
+                    </div>
                 </div>
                 <p id="additionalinfo">
                     Did we miss something?<br>
@@ -76,76 +78,97 @@
                 </p>
                 <div class="addMoreButtonContainer">
                 <button id="addContact" class="addMoreButton"> add more info</button>
-        
+                    
                 </div>
 
             </div>
             <div id="Summery-Objective">
-                    <h2 >Summary/Objective</h2>
-                    <textarea
-                    wrap="physical"
-                    id="sumObj" >
-                    </textarea>
-                            
-                </div>
+                <div style="width:fit-content;display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto">
+                    <h3 >Summary/Objective</h3>
+                    <h5>(optional)</h5>
+                </div>  
+                <textarea
+                wrap="physical"
+                id="sumObj"
+                >
+                </textarea>
+                
+            </div>
             <div id="inputSection">
-                    <div id="Name">
-                        <h2 >Name</h2>
-                            <input id="name" class="inputText" type="text" name="Name" placeholder="John Doe">
-                    </div>
-                    <div class="input">
-                            <h3>Title</h3>
-                            <h5>(optional)</h5>
-                            <input id="email" class="inputText" type="text" name="Name" placeholder="Senior Software Engineer">
-                    </div>
-                    <h2>Contact</h2>
-                    <div id="contactInfo">
-                        <div class="row">
-                            <div class="row1">
-                                    <h3>Email</h3>
-                                    <input id="email" class="inputText" type="text" name="Name" placeholder="johndoe1983@gmail.com">
-                            </div>
-                            
-                            <div class="row1">
-                                    <h3>Number</h3>
-                                    <input id="number" class="inputText" type="text" name="Name" placeholder="555-555-5555">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="row2">
-                                    <h3>Address</h3>
-                                    <h5>(optional)</h5>
-                                    <input id="address" class="inputText" type="text" name="Name" placeholder="1234 W fakestreet ave">
-                            </div>
-                            <div class="row2">
-                                    <h3>Zip</h3>
-                                    <h5>(optional)</h5>
-                                    <input id="zip" class="inputText" type="text" name="Name" placeholder="93123">
-                            </div>
-                            <div class="row2">
-                                    <h3>Location</h3>
-                                    <input id="city" class="inputText" type="text" name="Name" placeholder="San Francisco, Ca">
-                            </div>
+                    <div id="exInputSection">
+                        <div id="Exprience">
+                            <h2 >Exprience</h2>
                         </div>
                         
+                        <div class="inputExperience">
+                                <div class="position">
+                                        <h3>Position</h3>
+                                            <input id="position" class="inputText" type="text"  placeholder="Senior Developer">
+                                    </div>
+                                    <div>
+                                            <h3 style="display:block">Description/Achievements</h3>
+                                            <textarea class="description" rows="1">
+                                            </textarea>
+                                    </div>
+                            <div class="row">
+                                <div class="row1">
+                                        <h3>Company Name</h3>
+                                        <input id="ComName" class="inputText" type="text"  placeholder="Facebook">
+                                </div>
+                                <div class="row1">
+                                        <h3>Location</h3>
+                                        <h5>(optional)</h5>
+                                        <input id="location" class="inputText" type="text"  placeholder="San Francisco, CA">
+                                </div>
+                            </div> 
+                            <div class="row">
+                                    <div class="row1">
+                                            <h3>Start Date</h3>
+                                            <input id="dateStart" class="inputText" type="month">
+                                    </div>
+                                    <div class="row1">
+                                            <h3>End Date</h3>
+                                            <input id="number" class="inputText" type="month">
+                                    </div>
+                                </div>
+                                <div>
+                                        <form class="curEmployForm"> 
+                                            <input type="checkbox" class="curEmployed" width="10px">
+                                            <label for="curEmployed" style="color:#2290B9;"> Currently Employed Here</label> 
+                                        </form>
+
+                                </div>       
+                        </div>
                     </div>
                     <p id="additionalinfo">
-                        Did we miss something?<br>
-                        Want to add more?<br>
-                        We hear You!<br>
-                        simply click the button below
-                        to add more sections to your contact<br>
-                    </p>
-                    <div class="addMoreButtonContainer">
-                    <button id="addContact" class="addMoreButton"> add more info</button>
-            
+                            Want to add more?<br>
+                          
+                            We hear You! Again!<br>
+                            Simply click the button below
+                            to add more sections to your experience<br>
+                        </p>
+                        <div class="addMoreButtonContainer">
+                            <button id="addExperienceBtn" class="addMoreButton"> Add Experience</button>
+                        </div>
+            </div>
+            <div id="inputSection">
+                    <div>
+                        <h2>Skills</h2> 
+                    <div id="skillsInput">
+                        
                     </div>
-    
+                    <div class="addMoreButtonContainer">
+                            <button id="addSkillsBtn" class="addMoreButton"> Add Skills</button>
+                        </div>
                 </div>
+        </div>
         </div>
         
     </div>
-    
+
     <script src="resumeInfo.js"></script>
 </body>
 </html>
